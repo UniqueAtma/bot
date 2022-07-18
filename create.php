@@ -8,7 +8,7 @@
     $ifExists = $username.$friendUsername;
     if($friendUsername != $username && $friendUsername != 'bot')
     { 
-        // $findTable = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'epiz_27865341_user' AND TABLE_NAME = '$ifExists'";
+        // $finTable = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'epiz_27865341_user' AND TABLE_NAME = '$ifExists'";
         $findTable = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'user' AND TABLE_NAME = '$ifExists'";
         $findResult = mysqli_query($conn, $findTable);
         if(mysqli_num_rows($findResult)>0)
